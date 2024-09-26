@@ -1,0 +1,67 @@
+nav {
+  position: absolute;
+  background-color: $azul;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%; // Cambiado de 0 a un valor fijo
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, opacity 0.5s ease; // Añadidas transiciones
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 0 1rem 1rem;
+    color: $blanco;
+    font-weight: 700;
+    transition: background-color 0.35s ease, color 0.35s ease; // Añadida transición de color
+    &:hover {
+      background-color: darken($color: $azul, $amount: 10);
+    }
+  }
+
+  @include desktop {
+    grid-column: 2;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    max-height: 100%;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 10rem;
+
+    a {
+      display: flex;
+      height: 5rem;
+      width: 100%;
+      justify-content: space-evenly;
+      transition: background-color 0.35s ease, color 0.35s ease; // Añadida transición de color
+    }
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $azul;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 3rem;
+    margin: 1rem 2rem 1rem 0;
+  }
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  max-height: 100%; // Cambiado a 100%
+  transition: max-height 1s ease, opacity 0.5s ease; // Añadidas transiciones
+}
+
+.active {
+  background-color: $blanco !important;
+  color: $azul !important;
+}

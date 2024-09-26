@@ -1,0 +1,38 @@
+.formulario{
+    width: 100%;
+    margin-top: 5rem;
+}
+.campo{
+        display: flex;
+        margin-bottom: 5rem;
+        align-items: center;
+
+        label{
+            flex: 0 0 13rem;
+            color: $blanco;
+        }
+        input, select{
+            flex: 1;
+            border: none;
+            padding: calc($separacion / 3);
+            border-radius: 1rem;
+        }
+}
+.seccion-login{
+   margin: 2rem 0;
+   @include desktop{
+    margin: 5rem 0
+   }
+}
+.boton{
+    @include boton($azul, $blanco);
+}
+
+.vacaciones{
+    border-bottom: 1px solid #fff;
+
+    .btn-vac{
+        margin-bottom: 2rem!important;
+    }
+}
+

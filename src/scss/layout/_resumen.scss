@@ -1,0 +1,38 @@
+.contendor-servicio{
+    border-bottom: 1px solid $blanco;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+.contenido-resumen{
+    
+
+    span{
+        color: $azul;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
+
+.h-resumen{
+    font-weight: 400;
+    color: $blanco;
+    margin: 5rem 0 0 0;
+    padding: 0;
+}
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    .reservar-cita{
+        margin: 0;
+    }
+    .boton{
+        margin: 1rem;
+    }
+}
+.resumen{
+    margin-bottom: 2.5rem;
+}
+

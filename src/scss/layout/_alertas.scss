@@ -1,0 +1,41 @@
+.icono{
+    font-size: 2rem;
+    color: #000;
+}
+
+.p-alertas{
+    color: #000;
+}
+.btn-cancelar{
+    font-size: 2rem!important;
+    background-color: red!important;
+}
+.btn-confirmar{
+    font-size: 2rem!important;
+    background-color: $azul!important;
+}
+p.p-alertas{
+    color: #000;
+}
+.titulo{
+    font-size: 2.2rem;
+}
+.alerta-ancha{
+    width: 50%;
+}
+
+.swal2-popup .swal2-input {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mensaje-error{
+    background-color: red;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.in-alertas{
+    font-size: 1.8rem;
+}

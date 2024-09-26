@@ -1,0 +1,47 @@
+.paginado {
+  display: none;
+}
+.mostrado{
+    display: block;
+}
+.nav {
+    @include tablet{
+        display: flex;
+        margin: 5rem 0 0 0;
+    }
+  button {
+    background-color: $azul;
+    border: none;
+    padding: 1rem;
+    color: $blanco;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.35s ease; 
+    &:hover{
+        background-color: darken($color: $azul, $amount: 10);
+        cursor: pointer;
+    }
+
+  }
+}
+
+.pagina{
+  margin-bottom: 5rem;
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .boton{
+    margin: 1rem 0;
+  }
+}
+
+.ocultar{
+  visibility: hidden;
+}
+

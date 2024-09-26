@@ -1,0 +1,33 @@
+.acciones{
+    margin-top: 5rem;
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        color: $blanco;
+        display: block;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+.accionesSin{
+    margin-top: 5rem;
+    
+
+    a{
+        text-align: center;
+        margin-bottom: 2.5rem;
+        color: $blanco;
+        font-size: 3rem;
+        transition-property: transform;
+        transition-duration: 300ms;
+
+        &:hover{
+            color: $azul;
+            transform: scale(1.1);
+        }
+    }
+}
